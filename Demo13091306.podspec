@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   	spec.name         = "Demo13091306"
-  	spec.version      = "0.0.1"
+  	spec.version      = "0.0.2"
   	spec.summary      = "A description of Demo13091306."
 
   # This description is used to generate tags and improve search results.
@@ -26,10 +26,10 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   	spec.description  = <<-DESC
-	A description of Demo13091306.
+	This CocoaPods library helps you perform calculation.
                    DESC
 
-  	spec.homepage     = "http://EXAMPLE/Demo13091306"
+  	spec.homepage     = "https://github.com/pranayprajapati/Demo13091306"
 
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
 
   # spec.license      = "MIT (example)"
   
-	spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+	spec.license      = { :type => "MIT", :file => "LICENSE.md" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -76,6 +76,8 @@ Pod::Spec.new do |spec|
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
+	spec.ios.deployment_target = "15.4"
+  	spec.swift_version = "5"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -83,7 +85,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  	spec.source       = { :git => "http://EXAMPLE/Demo13091306.git", :tag => "#{spec.version}" }
+  	spec.source       = { :git => "https://github.com/pranayprajapati/Demo13091306.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,8 +96,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  	spec.source_files  = "Demo13091306/**/*.{h,m,swift}"
+  	spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
