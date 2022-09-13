@@ -10,11 +10,11 @@ import Foundation
 public final class Demo13091306 {
     let name = "Demo13091306"
     
-    public func add(a: Int, b: Int) -> Int {
+    public class func add(a: Int, b: Int) -> Int {
         return a + b
     }
     
-    public func sub(a: Int, b: Int) -> Int {
+    public class func sub(a: Int, b: Int) -> Int {
         return a - b
     }
 }
